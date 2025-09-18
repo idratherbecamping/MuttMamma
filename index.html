@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutt Mama Dog Training - Yvette Warner</title>
+    <meta name="description" content="Professional dog training in Southern California. 21-Day Transformation Program, In-Home Training, and Dogs Available for Adoption.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="imagery/logo.webp">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .video-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style>
+
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: '#7C9885',
+                        terracotta: '#D4A574',
+                        navy: '#2C3E50',
+                        coral: '#FF6B6B'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Simple Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="imagery/logo.webp" alt="Mutt Mama Dog Training" class="h-10 w-auto">
+                    <span class="text-xl font-semibold text-navy">Mutt Mama</span>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-sage font-medium">Home</a>
+                    <a href="#dogs" class="text-gray-700 hover:text-sage font-medium">Dogs Available</a>
+                    <a href="#training" class="text-gray-700 hover:text-sage font-medium">Training Programs</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-sage font-medium">Reviews</a>
+                    <a href="#contact" class="bg-coral text-white px-6 py-2 rounded-full hover:bg-red-500 transition-colors">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="#home" class="block px-3 py-2 text-gray-700">Home</a>
+                    <a href="#dogs" class="block px-3 py-2 text-gray-700">Dogs Available</a>
+                    <a href="#training" class="block px-3 py-2 text-gray-700">Training Programs</a>
+                    <a href="#testimonials" class="block px-3 py-2 text-gray-700">Reviews</a>
+                    <a href="#contact" class="block px-3 py-2 text-coral font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Simple -->
+    <section id="home" class="bg-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6">
+                        Professional Dog Training in Southern California
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Former Deputy Sheriff with 20+ years experience. Specializing in reactive dogs and rescue transformations.
+                    </p>
+
+                    <!-- Quick Info -->
+                    <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <strong>📞 Phone:</strong> (949) 636-3469
+                            </div>
+                            <div>
+                                <strong>📍 Areas:</strong> Orange County & Phoenix
+                            </div>
+                            <div>
+                                <strong>🎓 Trained by:</strong> The Dog Daddy
+                            </div>
+                            <div>
+                                <strong>⭐ Rating:</strong> 5 stars on Nextdoor
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-coral text-white px-8 py-3 rounded-full text-center font-semibold hover:bg-red-500 transition-colors">
+                            Free Consultation
+                        </a>
+                        <a href="tel:(949) 636-3469" class="border-2 border-sage text-sage px-8 py-3 rounded-full text-center font-semibold hover:bg-sage hover:text-white transition-colors">
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo -->
+                <div class="text-center">
+                    <img src="imagery/main_dog_plus_Mamma.jpg"
+                         alt="Yvette with trained dog"
+                         class="rounded-lg shadow-lg mx-auto max-w-full h-auto">
+                    <p class="text-sm text-gray-500 mt-2">Yvette with a successfully trained dog</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dogs Available for Adoption -->
+    <section id="dogs" class="py-16 bg-sage/5">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy mb-8 text-center">Dogs Available for Adoption</h2>
+            <p class="text-lg text-gray-600 text-center mb-12">
+                All dogs have completed our 21-Day Transformation Program and are ready for their forever homes.
+            </p>
+
+            <!-- Coming Soon placeholder - You can add actual dogs here -->
+            <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                <div class="text-6xl mb-4">🐕</div>
+                <h3 class="text-2xl font-semibold text-navy mb-4">Coming Soon!</h3>
+                <p class="text-gray-600 mb-6">
+                    We're currently updating our available dogs section. Check back soon or contact us directly to inquire about dogs ready for adoption.
+                </p>
+                <a href="#contact" class="bg-sage text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors">
+                    Inquire About Available Dogs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs -->
+    <section id="training" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy mb-12 text-center">Training Programs</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 21-Day Transformation -->
+                <div class="bg-coral/5 rounded-lg p-8 border border-coral/20">
+                    <h3 class="text-2xl font-bold text-navy mb-4">21-Day Transformation Camp</h3>
+                    <p class="text-gray-600 mb-6">
+                        Your dog lives with me for 21 days of intensive, personalized training. Perfect for serious behavioral issues.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li>✓ One dog at a time - no distractions</li>
+                        <li>✓ 24/7 consistency and structure</li>
+                        <li>✓ Aggressive dogs welcome</li>
+                        <li>✓ Lifetime boarding privileges</li>
+                        <li>✓ 100% satisfaction guarantee</li>
+                    </ul>
+                    <a href="#contact" class="bg-coral text-white px-6 py-3 rounded-full hover:bg-red-500 transition-colors">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- In-Home Training -->
+                <div class="bg-sage/5 rounded-lg p-8 border border-sage/20">
+                    <h3 class="text-2xl font-bold text-navy mb-4">In-Home Training</h3>
+                    <p class="text-gray-600 mb-6">
+                        Personalized training sessions in your home environment. Great for basic obedience and minor issues.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li>✓ Training in your environment</li>
+                        <li>✓ Flexible scheduling</li>
+                        <li>✓ Family involvement encouraged</li>
+                        <li>✓ Follow-up support included</li>
+                        <li>✓ Multiple packages available</li>
+                    </ul>
+                    <a href="#contact" class="bg-sage text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Discounts -->
+            <div class="mt-8 text-center">
+                <p class="text-sm text-gray-600 mb-3">Special pricing available for:</p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-700">
+                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('veterans')">Veterans & Law Enforcement (10% off)</span>
+                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('responders')">First Responders (10% off)</span>
+                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('rescue')">Rescue Dogs (20% off)</span>
+                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('seniors')">Seniors (10% off)</span>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">Click for details and terms</p>
+            </div>
+
+            <!-- Discount Details Overlays -->
+            <div id="discount-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50" onclick="hideDiscountDetails()">
+                <div class="flex items-center justify-center min-h-screen p-4">
+                    <div class="bg-white rounded-lg p-6 max-w-md w-full mx-auto" onclick="event.stopPropagation()">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 id="discount-title" class="text-lg font-semibold text-navy"></h3>
+                            <button onclick="hideDiscountDetails()" class="text-gray-400 hover:text-gray-600">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="discount-content" class="text-sm text-gray-700 space-y-3"></div>
+                        <div class="mt-6 text-center">
+                            <button onclick="hideDiscountDetails()" class="bg-sage text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                                Got it
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Humor Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-navy mb-8">Is This You and Your Dog?</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Don't worry - you're not alone! Here's a little humor to brighten your day.
+            </p>
+
+            <!-- Humor Video -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <video
+                    controls
+                    preload="metadata"
+                    class="w-full h-auto rounded-lg shadow-md"
+                    style="max-width: 100%; height: auto;"
+                >
+                    <source src="videos/humor-video.mp4" type="video/mp4">
+                    <p class="text-gray-600">
+                        Your browser doesn't support video playback.
+                        <a href="videos/humor-video.mp4" class="text-coral hover:underline">Download the video</a> instead.
+                    </p>
+                </video>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600">
+                        <strong>"Is this you and your dog?"</strong><br>
+                        <small class="text-gray-500">(From Dr. Phil show)</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy mb-12 text-center">What Clients Say</h2>
+
+            <!-- First Row of Testimonials -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Brian & Banjo -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🐕</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Brian & Banjo</div>
+                            <div class="text-sm text-gray-500">Nextdoor • Reactive Dog</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Mutt Mama is a pro! She really knows what she's doing, bringing dog training from reactive dogs to simple leash training. We're glad to settle for a Mutt Mama trained pooch. If you're looking for reliable, high-quality service at a great price, Mutt Mama is an excellent choice."
+                    </p>
+                    <div class="text-coral">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Teri & Teddy -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-terracotta/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🐶</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Teri & Teddy</div>
+                            <div class="text-sm text-gray-500">Sun City South • 4yo Aussiedoodle</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Absolute perfection! I was getting desperate because I couldn't manage my sweet dog. Yvette is THE dog whisperer! The minute she took over Teddy's leash, he knew who was in charge. He walked beside her like a champion at a dog show!"
+                    </p>
+                    <div class="text-coral">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Debbie & Bella -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-coral/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🦮</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Debbie & Bella</div>
+                            <div class="text-sm text-gray-500">Sun City West • 8yo Poodle/Terrier Mix</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "I'm THRILLED! Bella was impossible due to extreme reactivity toward other dogs. After just two sessions, Bella watches TV without barking and stayed calm when Yvette brought her own dog to our house. It felt like we were watching a totally different dog!"
+                    </p>
+                    <div class="text-coral">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Second Row of Testimonials -->
+            <div class="grid md:grid-cols-3 gap-8 mt-8">
+                <!-- Laurel & Clover -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🐕‍🦺</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Laurel & Clover</div>
+                            <div class="text-sm text-gray-500">El Toro • Rescue Dog</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "My rescue dog was extremely reactive on leash and had a big fear of other dogs. Mutt Mama worked with us patiently and consistently. When evaluation time came, Clover passed with flying colors! Thanks to Mutt Mama, we're now happily settled into Freedom Village."
+                    </p>
+                    <div class="text-coral">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Samantha & Macho -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-terracotta/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🐕</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Samantha & Macho</div>
+                            <div class="text-sm text-gray-500">Stetson Valley • New Baby Success</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "We love Yvette! She helped so much with our dog after my son was born. He had a habit of pulling and barking at other dogs while on walks. After only a few training sessions he did a full 180! Amazing pricing and offers boarding too."
+                    </p>
+                    <div class="text-coral">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Donna & Cami -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-coral/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🦮</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Donna & Cami</div>
+                            <div class="text-sm text-gray-500">Mission Viejo • 7mo Mini Goldendoodle</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Cami was excitable, nipping at people, jumping on anyone who tried to pet her, and pulling hard on the leash. Yvette taught me boundary training, which was a game-changer. Now I can keep Cami under control and I'm learning to be the pack leader she needs!"
+                    </p>
+                    <div class="text-coral">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Call to Action Row -->
+            <div class="flex justify-center mt-8">
+                <div class="bg-sage/10 rounded-lg p-8 border-2 border-sage/30 max-w-md">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">✨</div>
+                        <h4 class="font-semibold text-xl mb-3">Your Success Story Next?</h4>
+                        <p class="text-gray-600 mb-6">Join these happy clients and transform your dog's behavior with proven results.</p>
+                        <a href="#contact" class="bg-sage text-white px-8 py-3 rounded-full hover:bg-green-600 transition-colors font-semibold">
+                            Get Started Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About (Simple) -->
+    <section class="py-16 bg-navy text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <img src="imagery/cop_optimized.jpg" alt="Yvette Warner - Deputy Sheriff" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+            <h2 class="text-3xl font-bold mb-6">Meet Yvette Warner</h2>
+            <p class="text-lg mb-6">
+                Former Orange County Deputy Sheriff with over 20 years of dog training experience.
+                Trained under Augusto Deoliveira ("The Dog Daddy"). Specializing in reactive and rescue dogs.
+            </p>
+            <p class="text-gray-300">
+                "Having worked under pressure in law enforcement, I understand the importance of reliable, consistent results.
+                That's why I guarantee your dog's transformation."
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy mb-8 text-center">Get Started Today</h2>
+
+            <div class="max-w-md mx-auto">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">📞</span>
+                            <div>
+                                <div class="font-semibold">Phone</div>
+                                <a href="tel:(949) 636-3469" class="text-coral hover:underline">(949) 636-3469</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">✉️</span>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <a href="mailto:muttmamadogtrainer@gmail.com" class="text-coral hover:underline">muttmamadogtrainer@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">📍</span>
+                            <div>
+                                <div class="font-semibold">Service Areas</div>
+                                <div>Lake Forest, CA • Sun City, AZ</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-green-50 rounded-lg border border-green-200">
+                        <div class="font-semibold text-green-800 mb-2">Free Consultation Available</div>
+                        <div class="text-green-700">Call or email to schedule your free consultation and behavior assessment (valued at $125).</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <img src="imagery/logo.webp" alt="Mutt Mama" class="h-8 w-auto">
+                <span class="text-lg font-semibold">Mutt Mama Dog Training</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+                Professional dog training in Southern California and Phoenix • (949) 636-3469
+            </p>
+            <p class="text-sm text-gray-500">
+                © 2024 Mutt Mama Dog Training. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="tel:(949) 636-3469"
+           class="bg-coral text-white p-4 rounded-full shadow-lg hover:bg-red-500 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Simple JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Discount details overlay functionality
+        function showDiscountDetails(type) {
+            const overlay = document.getElementById('discount-overlay');
+            const title = document.getElementById('discount-title');
+            const content = document.getElementById('discount-content');
+
+            const discountInfo = {
+                veterans: {
+                    title: 'Veterans & Law Enforcement Discount',
+                    content: `
+                        <div><strong>Eligibility:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Active duty military personnel</li>
+                            <li>Military veterans with valid ID</li>
+                            <li>Active or retired law enforcement officers</li>
+                        </ul>
+                        <div class="mt-3"><strong>Terms:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>10% off all training programs</li>
+                            <li>Valid ID or documentation required</li>
+                            <li>Cannot be combined with other offers</li>
+                            <li>Applies to new clients only</li>
+                        </ul>
+                    `
+                },
+                responders: {
+                    title: 'First Responders Discount',
+                    content: `
+                        <div><strong>Eligibility:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Active firefighters</li>
+                            <li>Emergency medical technicians (EMT)</li>
+                            <li>Paramedics</li>
+                            <li>Emergency dispatchers</li>
+                        </ul>
+                        <div class="mt-3"><strong>Terms:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>10% off all training programs</li>
+                            <li>Employment verification required</li>
+                            <li>Cannot be combined with other offers</li>
+                            <li>Applies to new clients only</li>
+                        </ul>
+                    `
+                },
+                rescue: {
+                    title: 'Rescue Dogs Discount',
+                    content: `
+                        <div><strong>Eligibility:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Dogs adopted from shelters or rescues</li>
+                            <li>Foster dogs (temporary or foster-to-adopt)</li>
+                            <li>Dogs from breed-specific rescue organizations</li>
+                        </ul>
+                        <div class="mt-3"><strong>Terms:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>20% off all training programs</li>
+                            <li>Adoption papers or rescue documentation required</li>
+                            <li>Cannot be combined with other offers</li>
+                            <li>Valid for 6 months after adoption</li>
+                        </ul>
+                    `
+                },
+                seniors: {
+                    title: 'Senior Citizen Discount',
+                    content: `
+                        <div><strong>Eligibility:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Dog owners 65 years of age or older</li>
+                            <li>Valid for primary household decision maker</li>
+                        </ul>
+                        <div class="mt-3"><strong>Terms:</strong></div>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>10% off all training programs</li>
+                            <li>Valid ID showing date of birth required</li>
+                            <li>Cannot be combined with other offers</li>
+                            <li>Applies to new clients only</li>
+                        </ul>
+                    `
+                }
+            };
+
+            const info = discountInfo[type];
+            title.textContent = info.title;
+            content.innerHTML = info.content;
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function hideDiscountDetails() {
+            const overlay = document.getElementById('discount-overlay');
+            overlay.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close overlay with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                hideDiscountDetails();
+            }
+        });
+
+    </script>
+
+</body>
+</html>

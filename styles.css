@@ -1,0 +1,390 @@
+/* Custom CSS for Mutt Mama Website */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 107, 107, 0.6);
+    }
+}
+
+/* Animation classes */
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease-out;
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Custom hover effects */
+.magnetic-hover {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.magnetic-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom gradient backgrounds */
+.gradient-bg-1 {
+    background: linear-gradient(135deg, #FAF7F2 0%, #7C9885 100%);
+}
+
+.gradient-bg-2 {
+    background: linear-gradient(135deg, #D4A574 0%, #2C3E50 100%);
+}
+
+.gradient-bg-3 {
+    background: linear-gradient(135deg, #FF6B6B 0%, #7C9885 100%);
+}
+
+/* Glassmorphism effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Timeline styles */
+.timeline-line {
+    background: linear-gradient(to bottom, #7C9885 0%, #D4A574 50%, #FF6B6B 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7C9885;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6A8573;
+}
+
+/* Intersection Observer animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Before/After slider styles */
+.before-after-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.before-after-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #FF6B6B;
+    border-radius: 50%;
+    cursor: ew-resize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(255, 107, 107, 0.4);
+}
+
+/* Quiz styles */
+.quiz-option {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.quiz-option:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-option.selected {
+    background: #7C9885;
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Stats counter animation */
+.stats-counter {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Mobile-first responsive design helpers */
+@media (max-width: 640px) {
+    .hero-text {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .mobile-stack {
+        flex-direction: column;
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+}
+
+/* Loading states */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Form focus states */
+.form-input {
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(124, 152, 133, 0.15);
+}
+
+/* Progress indicators */
+.progress-bar {
+    background: linear-gradient(90deg, #7C9885 0%, #D4A574 50%, #FF6B6B 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Success notification styles */
+.success-notification {
+    background: linear-gradient(135deg, #7C9885, #6A8573);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(124, 152, 133, 0.3);
+    animation: slideInRight 0.5s ease-out;
+}
+
+/* Trust badge hover effects */
+.trust-badge {
+    transition: all 0.3s ease;
+    filter: grayscale(20%);
+}
+
+.trust-badge:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Social proof notification */
+.social-proof-popup {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #7C9885;
+    z-index: 1000;
+    animation: slideInLeft 0.5s ease-out;
+}
+
+/* Video overlay styles */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-overlay:hover {
+    background: rgba(44, 62, 80, 0.8);
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #2C3E50;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+    background: white;
+}
+
+/* Pricing table styles */
+.pricing-card {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    border: 3px solid #FF6B6B;
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF6B6B;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+/* Custom utility classes */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none;
+    }
+}

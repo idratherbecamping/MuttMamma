@@ -1,0 +1,14 @@
+{
+  "name": "mutt-mama-website",
+  "version": "1.0.0",
+  "description": "Professional dog training website for Mutt Mama",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": ["dog-training", "website", "static"],
+  "author": "Mutt Mama Dog Training",
+  "license": "ISC"
+}
