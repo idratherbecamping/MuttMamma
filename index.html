@@ -42,6 +42,13 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
+    <!-- Discount Announcement Banner -->
+    <div class="bg-coral text-white text-center text-sm sm:text-base font-semibold py-2 px-4">
+        <span class="inline-block mr-2">🎉</span>
+        <span>10% OFF for Veterans, First Responders, Rescue Dogs &amp; Seniors</span>
+        <a href="#discounts" class="underline ml-2 hover:text-yellow-100">See details</a>
+    </div>
+
     <!-- Simple Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
@@ -91,20 +98,20 @@
                 <!-- Content -->
                 <div>
                     <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6">
-                        Professional Dog Training in Southern California and Phoenix Arizona
+                        Professional Dog Training in Southern California
                     </h1>
                     <p class="text-xl text-gray-600 mb-8">
                         Former Deputy Sheriff with 20+ years experience. Specializing in reactive dogs and rescue transformations.
                     </p>
 
                     <!-- Quick Info -->
-                    <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                    <div class="bg-gray-100 rounded-lg p-6 mb-6">
                         <div class="grid md:grid-cols-2 gap-4 text-sm">
                             <div>
                                 <strong>📞 Phone:</strong> (949) 636-3469
                             </div>
                             <div>
-                                <strong>📍 Areas:</strong> Orange County & Phoenix
+                                <strong>📍 Areas:</strong> Orange County
                             </div>
                             <div>
                                 <strong>🎓 Trained by:</strong> The Dog Daddy
@@ -114,6 +121,17 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Prominent Discount Callout -->
+                    <a href="#discounts" class="block bg-coral/10 border-2 border-coral rounded-lg p-4 mb-8 hover:bg-coral/20 transition-colors">
+                        <div class="flex items-center">
+                            <div class="text-3xl mr-4">💰</div>
+                            <div>
+                                <div class="font-bold text-navy text-lg">Save 10% on Training</div>
+                                <div class="text-sm text-gray-700">Veterans • First Responders • Rescue Dogs • Seniors</div>
+                            </div>
+                        </div>
+                    </a>
 
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#contact" class="bg-coral text-white px-8 py-3 rounded-full text-center font-semibold hover:bg-red-500 transition-colors">
@@ -179,15 +197,17 @@
             </div>
 
             <!-- Discounts -->
-            <div class="mt-8 text-center">
-                <p class="text-sm text-gray-600 mb-3">Special pricing available. 10% discount for:</p>
-                <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-700">
-                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('veterans')">Veterans & Law Enforcement</span>
-                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('responders')">First Responders</span>
-                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('rescue')">Rescue Dogs</span>
-                    <span class="px-3 py-1 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors" onclick="showDiscountDetails('seniors')">Seniors</span>
+            <div id="discounts" class="mt-12 bg-coral/5 border-2 border-coral/30 rounded-lg p-8 text-center scroll-mt-20">
+                <div class="text-3xl mb-2">💰</div>
+                <h3 class="text-2xl font-bold text-navy mb-2">Save 10% on Training</h3>
+                <p class="text-gray-700 mb-5">Special pricing available for those who serve and rescue.</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm text-gray-800 font-medium">
+                    <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('veterans')">Veterans & Law Enforcement</span>
+                    <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('responders')">First Responders</span>
+                    <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('rescue')">Rescue Dogs</span>
+                    <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('seniors')">Seniors</span>
                 </div>
-                <p class="text-xs text-gray-500 mt-2">Click for details and terms</p>
+                <p class="text-xs text-gray-500 mt-3">Click any category for details and terms</p>
             </div>
 
             <!-- Discount Details Overlays -->
@@ -459,7 +479,7 @@
                         <span class="text-2xl mr-3">📍</span>
                         <div class="text-center">
                             <div class="font-semibold">Service Areas</div>
-                            <div>Lake Forest, CA • Sun City, AZ</div>
+                            <div>Lake Forest, CA</div>
                         </div>
                     </div>
                 </div>
@@ -475,7 +495,7 @@
                 <span class="text-lg font-semibold">Mutt Mama Dog Training</span>
             </div>
             <p class="text-gray-400 mb-4">
-                Professional dog training in Southern California and Phoenix • (949) 636-3469
+                Professional dog training in Southern California • (949) 636-3469
             </p>
             <p class="text-sm text-gray-500">
                 © 2024 Mutt Mama Dog Training. All rights reserved.
@@ -570,7 +590,7 @@
                         </ul>
                         <div class="mt-3"><strong>Terms:</strong></div>
                         <ul class="list-disc list-inside space-y-1 ml-4">
-                            <li>20% off all training programs</li>
+                            <li>10% off all training programs</li>
                             <li>Adoption papers or rescue documentation required</li>
                             <li>Cannot be combined with other offers</li>
                             <li>Valid for 6 months after adoption</li>
