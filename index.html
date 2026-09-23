@@ -51,7 +51,7 @@
     <!-- Discount Announcement Banner -->
     <div class="bg-coral text-white text-center text-sm sm:text-base font-semibold py-2 px-4">
         <span class="inline-block mr-2">🎉</span>
-        <span>Veterans, First Responders, Rescue Dogs &amp; Seniors: 10% OFF In-Home Training &bull; 5% OFF the 21-Day Transformation Program</span>
+        <span>Veterans, First Responders, Rescue Dogs &amp; Seniors: <strong>25% OFF</strong> the 21-Day Transformation &bull; <strong>10% OFF</strong> In-Home Training</span>
         <a href="#discounts" class="underline ml-2 hover:text-yellow-100">See details</a>
     </div>
 
@@ -66,12 +66,12 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-sage font-medium">Home</a>
-                    <a href="#dogs" class="text-gray-700 hover:text-sage font-medium">Dogs Available</a>
-                    <a href="#training" class="text-gray-700 hover:text-sage font-medium">Training Programs</a>
+                <div class="hidden md:flex items-center space-x-5 lg:space-x-7">
+                    <a href="#training" class="text-gray-700 hover:text-sage font-medium">Programs &amp; Pricing</a>
+                    <a href="#social-club" class="text-gray-700 hover:text-sage font-medium">Social Club</a>
                     <a href="#testimonials" class="text-gray-700 hover:text-sage font-medium">Reviews</a>
-                    <a href="#contact" class="bg-coral text-white px-6 py-2 rounded-full hover:bg-red-500 transition-colors">
+                    <a href="#dogs" class="text-gray-700 hover:text-sage font-medium">Dogs Available</a>
+                    <a href="#contact" class="bg-coral text-white px-6 py-2 rounded-full hover:bg-red-500 transition-colors whitespace-nowrap">
                         Contact
                     </a>
                 </div>
@@ -88,9 +88,10 @@
             <div class="md:hidden hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
                     <a href="#home" class="block px-3 py-2 text-gray-700">Home</a>
-                    <a href="#dogs" class="block px-3 py-2 text-gray-700">Dogs Available</a>
-                    <a href="#training" class="block px-3 py-2 text-gray-700">Training Programs</a>
+                    <a href="#training" class="block px-3 py-2 text-gray-700">Programs &amp; Pricing</a>
+                    <a href="#social-club" class="block px-3 py-2 text-gray-700">Mutt Mama Social Club</a>
                     <a href="#testimonials" class="block px-3 py-2 text-gray-700">Reviews</a>
+                    <a href="#dogs" class="block px-3 py-2 text-gray-700">Dogs Available</a>
                     <a href="#contact" class="block px-3 py-2 text-coral font-medium">Contact</a>
                 </div>
             </div>
@@ -106,9 +107,23 @@
                     <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6">
                         Professional Dog Training in Southern California
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8">
+                    <p class="text-xl text-gray-600 mb-6">
                         Former Deputy Sheriff with 20+ years experience. Specializing in reactive dogs and rescue transformations.
                     </p>
+
+                    <!-- Pricing at a glance -->
+                    <div class="grid sm:grid-cols-2 gap-3 mb-6">
+                        <a href="#in-home" class="block bg-white border-2 border-sage/40 rounded-lg p-4 hover:border-sage transition-colors">
+                            <div class="text-xs font-bold tracking-widest text-sage uppercase mb-1">In-Home Private Training</div>
+                            <div class="text-2xl font-bold text-navy">$175<span class="text-sm font-medium text-gray-600"> / 60-min session</span></div>
+                            <div class="text-sm text-gray-600 mt-1">Pay as you go. No packages.</div>
+                        </a>
+                        <a href="#transformation" class="block bg-white border-2 border-coral/40 rounded-lg p-4 hover:border-coral transition-colors">
+                            <div class="text-xs font-bold tracking-widest text-coral uppercase mb-1">21-Day Transformation</div>
+                            <div class="text-2xl font-bold text-navy">$5,000<span class="text-sm font-medium text-gray-600"> / program</span></div>
+                            <div class="text-sm text-gray-600 mt-1">One dog at a time. Lives in my home.</div>
+                        </a>
+                    </div>
 
                     <!-- Quick Info -->
                     <div class="bg-gray-100 rounded-lg p-6 mb-6">
@@ -135,7 +150,7 @@
                             <div class="text-3xl mr-4">💰</div>
                             <div>
                                 <div class="font-bold text-navy text-lg">Veterans • First Responders • Rescue Dogs • Seniors</div>
-                                <div class="text-sm text-gray-700">10% off In-Home Training &bull; 5% off the 21-Day Transformation Program</div>
+                                <div class="text-sm text-gray-700">25% off the 21-Day Transformation &bull; 10% off In-Home Training</div>
                             </div>
                         </div>
                     </a>
@@ -161,72 +176,266 @@
     </section>
 
     <!-- Training Programs -->
-    <section id="training" class="py-16 bg-white">
+    <section id="training" class="py-16 bg-white scroll-mt-20">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-navy mb-12 text-center">Training Programs</h2>
+            <h2 class="text-3xl font-bold text-navy mb-4 text-center">Training Programs &amp; Pricing</h2>
+            <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                Mutt Mama offers two distinct services. They are not two price points for the same thing &mdash; they are
+                two different levels of involvement. The right one depends on your dog, your goals, and how much structure
+                your household needs.
+            </p>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- 21-Day Transformation -->
-                <div class="bg-coral/5 rounded-lg p-8 border border-coral/20">
-                    <h3 class="text-2xl font-bold text-navy mb-4">21-Day Transformation Program</h3>
-                    <p class="text-gray-600 mb-6">
-                        Your dog lives with me for 21 days of intensive, personalized training. Perfect for serious behavioral issues.
+            <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+
+                <!-- In-Home Private Training -->
+                <div id="in-home" class="bg-sage/5 rounded-xl p-8 border-2 border-sage/25 flex flex-col scroll-mt-24">
+                    <div class="text-xs font-bold tracking-widest text-sage uppercase mb-2">One-on-One Coaching</div>
+                    <h3 class="text-2xl font-bold text-navy mb-3">In-Home Private Training</h3>
+                    <div class="flex items-baseline gap-2 mb-1">
+                        <span class="text-4xl font-bold text-navy">$175</span>
+                        <span class="text-gray-600 font-medium">per 60-minute session</span>
+                    </div>
+                    <p class="text-sm text-sage font-semibold mb-5">Pay as you go &mdash; no packages offered or required</p>
+
+                    <p class="text-gray-700 mb-5">
+                        Individualized, one-on-one training in your home and your dog's everyday environment. This is for
+                        owners who want to work directly with their own dog on specific training or behavioral issues, and
+                        who want to build their own handling skills along the way. Every session is customized to the
+                        particular dog and the issues you are actually living with.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li>✓ One dog at a time - no distractions</li>
-                        <li>✓ 24/7 consistency and structure</li>
-                        <li>✓ Aggressive dogs welcome</li>
-                        <li>✓ Lifetime boarding privileges</li>
-                        <li>✓ 100% satisfaction guarantee</li>
+
+                    <div class="font-semibold text-navy mb-3">A session may cover:</div>
+                    <ul class="space-y-2 mb-6 text-gray-800">
+                        <li class="flex gap-2"><span class="text-sage">✓</span> Manageable behavior and unwanted behaviors</li>
+                        <li class="flex gap-2"><span class="text-sage">✓</span> Household structure, boundaries and responsiveness</li>
+                        <li class="flex gap-2"><span class="text-sage">✓</span> Leash skills in your own neighborhood</li>
+                        <li class="flex gap-2"><span class="text-sage">✓</span> Your handling and communication with your dog</li>
+                        <li class="flex gap-2"><span class="text-sage">✓</span> Reasonable phone and email support between sessions</li>
                     </ul>
-                    <p class="text-sm font-semibold text-coral mb-6">💰 5% off for veterans, first responders, rescue dogs &amp; seniors</p>
-                    <a href="#contact" class="bg-coral text-white px-6 py-3 rounded-full hover:bg-red-500 transition-colors">
-                        Learn More
+
+                    <div class="bg-white border border-sage/30 rounded-lg p-4 mb-6 text-sm text-gray-700">
+                        <div class="font-semibold text-navy mb-1">How scheduling and payment work</div>
+                        Training is scheduled and paid for one session at a time, with payment due in full before each
+                        session begins. Booking one session at a time keeps the plan flexible and lets us both evaluate
+                        progress after every visit.
+                    </div>
+
+                    <div class="bg-sage/10 border-l-4 border-sage rounded-r-lg p-4 mb-6">
+                        <div class="font-semibold text-navy mb-1">If your dog needs more than sessions can give</div>
+                        <p class="text-sm text-gray-700">
+                            For many dogs and owners, individual sessions are exactly what's needed and nothing more is
+                            required. For others, the behavior runs deeper. After roughly two in-home sessions, if you and
+                            I <em>mutually agree</em> that a more immersive approach would be the best way to reach your
+                            goals, you have the option of transitioning into the 21-Day Transformation Program. This is
+                            never automatic and never required &mdash; it's a decision we make together.
+                        </p>
+                    </div>
+
+                    <p class="text-sm font-semibold text-sage mb-6 mt-auto">💰 10% off for veterans, first responders, rescue dogs &amp; seniors</p>
+                    <a href="#contact" class="bg-sage text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors text-center font-semibold">
+                        Book an In-Home Session
                     </a>
                 </div>
 
-                <!-- In-Home Training -->
-                <div class="bg-sage/5 rounded-lg p-8 border border-sage/20">
-                    <h3 class="text-2xl font-bold text-navy mb-4">In-Home Training</h3>
-                    <p class="text-gray-600 mb-6">
-                        Personalized training sessions in your home environment. Great for basic obedience and minor issues.
+                <!-- 21-Day Transformation -->
+                <div id="transformation" class="bg-coral/5 rounded-xl p-8 border-2 border-coral/40 flex flex-col relative scroll-mt-24">
+                    <div class="absolute -top-3 left-8 bg-coral text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+                        Flagship Program
+                    </div>
+                    <div class="text-xs font-bold tracking-widest text-coral uppercase mb-2">Full Immersion Board &amp; Train</div>
+                    <h3 class="text-2xl font-bold text-navy mb-3">21-Day Transformation Program</h3>
+                    <div class="flex items-baseline gap-2 mb-1">
+                        <span class="text-4xl font-bold text-navy">$5,000</span>
+                        <span class="text-gray-600 font-medium">for the full 21-day program</span>
+                    </div>
+                    <p class="text-sm text-coral font-semibold mb-5">One dog at a time &mdash; your dog is my only training client</p>
+
+                    <p class="text-gray-700 mb-5">
+                        Mutt Mama's premium, immersive training experience for dogs who need a deeper level of training,
+                        structure and behavior modification than sessions can provide &mdash; and for owners ready to
+                        follow through at home. Your dog lives with me for a full 21 days as part of my household.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li>✓ Training in your environment</li>
-                        <li>✓ Flexible scheduling</li>
-                        <li>✓ Family involvement encouraged</li>
-                        <li>✓ Follow-up support included</li>
-                        <li>✓ Multiple packages available</li>
+
+                    <div class="font-semibold text-navy mb-3">How it works:</div>
+                    <ul class="space-y-2 mb-6 text-gray-800">
+                        <li class="flex gap-2"><span class="text-coral">✓</span> We review your dog's behavioral issues and agree on goals before day one</li>
+                        <li class="flex gap-2"><span class="text-coral">✓</span> A customized plan is built around your dog's needs, temperament and history</li>
+                        <li class="flex gap-2"><span class="text-coral">✓</span> Daily hands-on training, structure, socialization and real-world exposure</li>
+                        <li class="flex gap-2"><span class="text-coral">✓</span> Progress updates throughout, including photos and videos</li>
+                        <li class="flex gap-2"><span class="text-coral">✓</span> A 4-hour hands-on transfer session with you at graduation</li>
                     </ul>
-                    <p class="text-sm font-semibold text-sage mb-6">💰 10% off for veterans, first responders, rescue dogs &amp; seniors</p>
-                    <a href="#contact" class="bg-sage text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors">
-                        Get Started
+
+                    <div class="bg-white border border-coral/30 rounded-lg p-4 mb-6 text-sm text-gray-700">
+                        <div class="font-semibold text-navy mb-1">Booking and payment</div>
+                        A <strong>$500 non-refundable hold fee</strong> reserves your dog's spot and is applied toward the
+                        total. The remaining balance is due in full no later than your dog's scheduled start date.
+                        Accepted payment methods: cash, check or Zelle.
+                    </div>
+
+                    <p class="text-sm font-semibold text-coral mb-6 mt-auto">💰 25% off for veterans, first responders, rescue dogs &amp; seniors</p>
+                    <a href="#contact" class="bg-coral text-white px-6 py-3 rounded-full hover:bg-red-500 transition-colors text-center font-semibold">
+                        Ask About Availability
                     </a>
                 </div>
             </div>
 
+            <!-- ONE DOG CALLOUT -->
+            <div class="mt-14 bg-navy text-white rounded-xl overflow-hidden">
+                <div class="px-6 sm:px-12 py-12 text-center">
+                    <div class="text-5xl mb-5">🐕</div>
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6 leading-tight">
+                        ONE DOG.<span class="text-coral"> 21 DAYS.</span> MY FULL ATTENTION.
+                    </h3>
+                    <p class="text-lg text-gray-200 max-w-3xl mx-auto mb-8">
+                        Mutt Mama accepts only one dog at a time into the 21-Day Transformation Program, allowing each dog
+                        to receive a truly individualized training experience while living in my home as part of my
+                        household.
+                    </p>
+                    <div class="max-w-3xl mx-auto bg-white/10 border border-white/20 rounded-lg p-6 text-left">
+                        <p class="text-gray-100">
+                            <strong class="text-white">This is not a kennel-style board &amp; train.</strong> There is no
+                            run of client dogs being worked in rotation, no crate row, no shared attention. For those 21
+                            days, your dog is my sole training client &mdash; in my home, in my routine, in my truck, on my
+                            walks, and in the real world. That is the reason this program costs what it costs, and it is
+                            the single biggest thing that separates Mutt Mama from a facility.
+                        </p>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-6">
+                        Because only one dog is in the program at a time, spots are genuinely limited and booked in advance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- WHAT'S INCLUDED -->
+            <div class="mt-14">
+                <h3 class="text-2xl font-bold text-navy mb-3 text-center">Everything Included in the 21-Day Transformation</h3>
+                <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+                    The $5,000 is not just three weeks of training. It covers the handoff, the equipment, the follow-up,
+                    and a relationship that continues long after your dog comes home.
+                </p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🦴</div>
+                        <div class="font-semibold text-navy mb-1">Daily hands-on training</div>
+                        <p class="text-sm text-gray-600">Individualized daily work on training, structure, socialization and real-world exposure.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">📋</div>
+                        <div class="font-semibold text-navy mb-1">A customized training plan</div>
+                        <p class="text-sm text-gray-600">Built around your dog's specific needs, temperament and history &mdash; agreed on with you before day one.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">📸</div>
+                        <div class="font-semibold text-navy mb-1">Progress photos and videos</div>
+                        <p class="text-sm text-gray-600">Updates throughout the program so you can see the change as it happens.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🤝</div>
+                        <div class="font-semibold text-navy mb-1">4-hour owner transfer session</div>
+                        <p class="text-sm text-gray-600">A full hands-on handoff at graduation, plus an in-person demonstration, so the training transfers to you.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🔁</div>
+                        <div class="font-semibold text-navy mb-1">Two follow-up sessions</div>
+                        <p class="text-sm text-gray-600">To be used within 60 days of pick-up, once real life has had a chance to test the training.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🎒</div>
+                        <div class="font-semibold text-navy mb-1">Training tools and equipment</div>
+                        <p class="text-sm text-gray-600">Included in the program cost and sent home with your dog at graduation.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">📡</div>
+                        <div class="font-semibold text-navy mb-1">Mini Educator collar, when appropriate</div>
+                        <p class="text-sm text-gray-600">Used with dogs 6 months and older when it fits the dog, and included in the equipment that goes home.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🎓</div>
+                        <div class="font-semibold text-navy mb-1">Separate Mini Educator owner session</div>
+                        <p class="text-sm text-gray-600">If the collar is used, a separate two-hour hands-on session teaches you to use it correctly. This is in addition to the 4-hour transfer.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🍽️</div>
+                        <div class="font-semibold text-navy mb-1">Graduation breakfast or lunch outing</div>
+                        <p class="text-sm text-gray-600">Your choice. We take your dog out in public together so you see exactly what calm, appropriate behavior looks like in the real world.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">📞</div>
+                        <div class="font-semibold text-navy mb-1">Lifetime coaching</div>
+                        <p class="text-sm text-gray-600">I remain your lifetime coach for your graduating dog, for reasonable ongoing guidance, questions and support.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🏠</div>
+                        <div class="font-semibold text-navy mb-1">Boarding for graduates only</div>
+                        <p class="text-sm text-gray-600">Mutt Mama is not a boarding business, but graduates of the 21-Day Transformation get access to boarding as a benefit of the program.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:border-coral/40 transition-colors">
+                        <div class="text-2xl mb-2">🔧</div>
+                        <div class="font-semibold text-navy mb-1">Remediation stay option</div>
+                        <p class="text-sm text-gray-600">If new behavioral issues develop later, your dog is eligible for a one-week remediation stay at a steeply discounted rate, subject to availability.</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 text-center mt-4 max-w-3xl mx-auto">
+                    Boarding, lifetime coaching and the remediation stay apply only to the same dog that completed the
+                    program and are non-transferable.
+                </p>
+            </div>
+
+            <!-- WHICH ONE IS RIGHT -->
+            <div class="mt-14 bg-gray-50 border border-gray-200 rounded-xl p-6 sm:p-8">
+                <h3 class="text-2xl font-bold text-navy mb-6 text-center">Which One Is Right for My Dog?</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white border-2 border-sage/30 rounded-lg p-6">
+                        <div class="font-bold text-sage text-lg mb-3">In-Home Private Training</div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="text-sage font-bold">›</span> You want to do the training yourself, with coaching</li>
+                            <li class="flex gap-2"><span class="text-sage font-bold">›</span> The issues are specific and situational</li>
+                            <li class="flex gap-2"><span class="text-sage font-bold">›</span> Your household can practice consistently between visits</li>
+                            <li class="flex gap-2"><span class="text-sage font-bold">›</span> You'd rather start small and see how it goes</li>
+                            <li class="flex gap-2"><span class="text-sage font-bold">›</span> You want to keep your dog home throughout</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white border-2 border-coral/30 rounded-lg p-6">
+                        <div class="font-bold text-coral text-lg mb-3">21-Day Transformation</div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex gap-2"><span class="text-coral font-bold">›</span> Behavior is entrenched, reactive, or unsafe to manage</li>
+                            <li class="flex gap-2"><span class="text-coral font-bold">›</span> The dog needs full-time structure to reset, not one hour a week</li>
+                            <li class="flex gap-2"><span class="text-coral font-bold">›</span> You've tried sessions or other training without lasting change</li>
+                            <li class="flex gap-2"><span class="text-coral font-bold">›</span> You want deep behavior modification plus owner education</li>
+                            <li class="flex gap-2"><span class="text-coral font-bold">›</span> You're ready to follow through consistently once your dog is home</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 mt-6 text-sm">
+                    Not sure? That's what the free consultation is for. <a href="#contact" class="text-coral font-semibold hover:underline">Tell me about your dog →</a>
+                </p>
+            </div>
+
             <!-- Discounts -->
-            <div id="discounts" class="mt-12 bg-coral/5 border-2 border-coral/30 rounded-lg p-8 text-center scroll-mt-20">
+            <div id="discounts" class="mt-14 bg-coral/5 border-2 border-coral/30 rounded-xl p-8 text-center scroll-mt-20">
                 <div class="text-3xl mb-2">💰</div>
                 <h3 class="text-2xl font-bold text-navy mb-2">Save on Training</h3>
-                <p class="text-gray-700 mb-5">Special pricing available for those who serve and rescue.</p>
-                <div class="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto mb-6 text-left">
-                    <div class="bg-white border border-sage/30 rounded-lg p-4">
-                        <div class="text-2xl font-bold text-sage">10% off</div>
-                        <div class="text-sm text-gray-700">In-Home Training sessions</div>
+                <p class="text-gray-700 mb-5">Special pricing available for those who serve and those who rescue.</p>
+                <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-6 text-left">
+                    <div class="bg-white border border-coral/30 rounded-lg p-5">
+                        <div class="text-3xl font-bold text-coral">25% off</div>
+                        <div class="text-sm text-gray-700 mt-1">The 21-Day Transformation Program</div>
+                        <div class="text-xs text-gray-500 mt-2">$5,000 &rarr; <span class="font-semibold text-navy">$3,750</span> for eligible clients</div>
                     </div>
-                    <div class="bg-white border border-coral/30 rounded-lg p-4">
-                        <div class="text-2xl font-bold text-coral">5% off</div>
-                        <div class="text-sm text-gray-700">21-Day Transformation Program</div>
+                    <div class="bg-white border border-sage/30 rounded-lg p-5">
+                        <div class="text-3xl font-bold text-sage">10% off</div>
+                        <div class="text-sm text-gray-700 mt-1">In-Home Private Training sessions</div>
+                        <div class="text-xs text-gray-500 mt-2">$175 &rarr; <span class="font-semibold text-navy">$157.50</span> per session for eligible clients</div>
                     </div>
                 </div>
                 <div class="flex flex-wrap justify-center gap-3 text-sm text-gray-800 font-medium">
-                    <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('veterans')">Veterans & Law Enforcement</span>
+                    <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('veterans')">Veterans &amp; Law Enforcement</span>
                     <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('responders')">First Responders</span>
                     <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('rescue')">Rescue Dogs</span>
                     <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('seniors')">Seniors</span>
                 </div>
-                <p class="text-xs text-gray-500 mt-3">Click any category for details and terms</p>
+                <p class="text-xs text-gray-500 mt-3">Click any category for details and terms. Discounts cannot be combined with other offers.</p>
             </div>
 
             <!-- Discount Details Overlays -->
@@ -250,6 +459,54 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- My Commitment -->
+    <section id="commitment" class="py-16 bg-sage/10 scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy mb-4 text-center">My Commitment to You</h2>
+            <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10">
+                I stand behind my work completely. But I won't promise you a guaranteed outcome, and you should be
+                skeptical of any trainer who does. Dog training depends on genetics, temperament, health, history, and
+                above all on what happens once your dog comes home and whether the training is followed consistently.
+                Those are not things any trainer controls.
+            </p>
+            <p class="text-lg text-navy font-semibold text-center max-w-3xl mx-auto mb-10">
+                So instead of promising a result, here is exactly what I commit to giving you:
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+                <div class="bg-white rounded-lg p-6 border-l-4 border-sage shadow-sm">
+                    <div class="font-bold text-navy mb-2">Individualized training</div>
+                    <p class="text-sm text-gray-600">A plan built for your dog specifically &mdash; and in the 21-Day Transformation, my undivided attention, because yours is the only dog in the program.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border-l-4 border-sage shadow-sm">
+                    <div class="font-bold text-navy mb-2">Extensive owner education</div>
+                    <p class="text-sm text-gray-600">Training the dog is half the work. I teach you to handle, communicate and hold structure, because you're the one who keeps it going.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border-l-4 border-sage shadow-sm">
+                    <div class="font-bold text-navy mb-2">Follow-up sessions</div>
+                    <p class="text-sm text-gray-600">Two follow-ups within 60 days for 21-Day graduates, so we can adjust once real life has tested the training.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border-l-4 border-sage shadow-sm">
+                    <div class="font-bold text-navy mb-2">Lifetime coaching</div>
+                    <p class="text-sm text-gray-600">I stay your coach for your graduating dog &mdash; reasonable guidance, questions and support, for as long as you have that dog.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border-l-4 border-sage shadow-sm">
+                    <div class="font-bold text-navy mb-2">A remediation option</div>
+                    <p class="text-sm text-gray-600">If new issues surface down the road, your dog is eligible for a one-week remediation stay at a steeply discounted rate, subject to availability.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border-l-4 border-sage shadow-sm">
+                    <div class="font-bold text-navy mb-2">An ongoing community</div>
+                    <p class="text-sm text-gray-600">Two free Mutt Mama Social Club meetups every month, so you keep practicing with your dog alongside other trained dogs and their owners.</p>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-600 mt-8 max-w-3xl mx-auto">
+                Mutt Mama uses balanced training principles and works with both the dog and the owner. Consistent
+                follow-through between and after sessions is an essential part of achieving and maintaining progress.
+            </p>
         </div>
     </section>
 
@@ -419,6 +676,71 @@
         </div>
     </section>
 
+    <!-- Mutt Mama Social Club -->
+    <section id="social-club" class="py-16 bg-terracotta/10 scroll-mt-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-coral text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
+                    Free for Mutt Mama Clients
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">MUTT MAMA SOCIAL CLUB</h2>
+                <p class="text-xl text-gray-700 italic mb-6">Because training may end, but you're always part of the pack.</p>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Your relationship with Mutt Mama doesn't stop when the paid training does. Twice a month I host a free
+                    social meetup for clients and their dogs who have completed training with me &mdash; a chance to keep
+                    practicing, enjoy structured socialization with other trained dogs, and spend some real time together.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Yappy Hour -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border-t-4 border-navy">
+                    <div class="text-4xl mb-3">🌇</div>
+                    <h3 class="text-2xl font-bold text-navy mb-1">YAPPY HOUR</h3>
+                    <p class="text-coral font-semibold tracking-wide mb-4">Sip. Stroll. Socialize.</p>
+                    <p class="text-gray-700 mb-5">
+                        An evening pack walk and social where Mutt Mama clients and their dogs get together, keep
+                        practicing their training, socialize, and enjoy some casual time together with light refreshments.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-navy/10 text-navy px-3 py-1 rounded-full">Evening</span>
+                        <span class="bg-navy/10 text-navy px-3 py-1 rounded-full">Pack walk</span>
+                        <span class="bg-navy/10 text-navy px-3 py-1 rounded-full">Light refreshments</span>
+                    </div>
+                </div>
+
+                <!-- Bark & Bites -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border-t-4 border-terracotta">
+                    <div class="text-4xl mb-3">🥕</div>
+                    <h3 class="text-2xl font-bold text-navy mb-1">BARK &amp; BITES</h3>
+                    <p class="text-coral font-semibold tracking-wide mb-4">Nibble. Stroll. Wag. Repeat.</p>
+                    <p class="text-gray-700 mb-5">
+                        A daytime pack walk and social with simple nibbles for the humans &mdash; think finger foods, fruit
+                        and veggie platters, and easy grab-and-go bites. Nothing fancy. Just good company, happy dogs, and
+                        a chance for everyone to spend some time together.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-terracotta/20 text-navy px-3 py-1 rounded-full">Daytime</span>
+                        <span class="bg-terracotta/20 text-navy px-3 py-1 rounded-full">Pack walk</span>
+                        <span class="bg-terracotta/20 text-navy px-3 py-1 rounded-full">Snacks &amp; company</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-white border-2 border-coral/30 rounded-xl p-6 sm:p-8 text-center max-w-4xl mx-auto">
+                <div class="text-2xl font-bold text-navy mb-2">Both meetups are completely FREE</div>
+                <p class="text-gray-700 mb-4">
+                    Yappy Hour and Bark &amp; Bites are a free benefit for existing Mutt Mama clients and their dogs who
+                    have completed training with me. Two meetups every month, all year long.
+                </p>
+                <p class="text-sm text-gray-500">
+                    Meetups are offered subject to scheduling, weather and availability. Current clients are notified of
+                    upcoming dates directly.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- About (Simple) -->
     <section class="py-16 bg-navy text-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
@@ -429,8 +751,11 @@
                 Trained under Augusto Deoliveira ("The Dog Daddy"). Specializing in reactive and rescue dogs.
             </p>
             <p class="text-gray-300">
-                "Having worked under pressure in law enforcement, I understand the importance of reliable, consistent results.
-                That's why I guarantee your dog's transformation."
+                "Having worked under pressure in law enforcement, I understand what it takes to stay calm, consistent and
+                fair &mdash; and dogs respond to exactly that. I can't promise you a specific behavior on a specific day,
+                because your dog is a living animal and the work continues at home. What I can promise is that I will give
+                your dog everything I have, teach you how to carry it forward, and stay in your corner long after the
+                training is paid for."
             </p>
         </div>
     </section>
@@ -522,7 +847,7 @@
                 Professional dog training in Southern California • (949) 636-3469
             </p>
             <p class="text-sm text-gray-500">
-                © 2024 Mutt Mama Dog Training. All rights reserved.
+                © 2026 Mutt Mama Dog Training LLC &bull; California Entity No. 202464414457. All rights reserved.
             </p>
         </div>
     </footer>
@@ -577,7 +902,7 @@
                         </ul>
                         <div class="mt-3"><strong>Terms:</strong></div>
                         <ul class="list-disc list-inside space-y-1 ml-4">
-                            <li>10% off In-Home Training &bull; 5% off the 21-Day Transformation Program</li>
+                            <li>25% off the 21-Day Transformation Program &bull; 10% off In-Home Private Training</li>
                             <li>Valid ID or documentation required</li>
                             <li>Cannot be combined with other offers</li>
                             <li>Applies to new clients only</li>
@@ -596,7 +921,7 @@
                         </ul>
                         <div class="mt-3"><strong>Terms:</strong></div>
                         <ul class="list-disc list-inside space-y-1 ml-4">
-                            <li>10% off In-Home Training &bull; 5% off the 21-Day Transformation Program</li>
+                            <li>25% off the 21-Day Transformation Program &bull; 10% off In-Home Private Training</li>
                             <li>Employment verification required</li>
                             <li>Cannot be combined with other offers</li>
                             <li>Applies to new clients only</li>
@@ -614,7 +939,7 @@
                         </ul>
                         <div class="mt-3"><strong>Terms:</strong></div>
                         <ul class="list-disc list-inside space-y-1 ml-4">
-                            <li>10% off In-Home Training &bull; 5% off the 21-Day Transformation Program</li>
+                            <li>25% off the 21-Day Transformation Program &bull; 10% off In-Home Private Training</li>
                             <li>Adoption papers or rescue documentation required</li>
                             <li>Cannot be combined with other offers</li>
                             <li>Valid for 6 months after adoption</li>
@@ -631,7 +956,7 @@
                         </ul>
                         <div class="mt-3"><strong>Terms:</strong></div>
                         <ul class="list-disc list-inside space-y-1 ml-4">
-                            <li>10% off In-Home Training &bull; 5% off the 21-Day Transformation Program</li>
+                            <li>25% off the 21-Day Transformation Program &bull; 10% off In-Home Private Training</li>
                             <li>Valid ID showing date of birth required</li>
                             <li>Cannot be combined with other offers</li>
                             <li>Applies to new clients only</li>
