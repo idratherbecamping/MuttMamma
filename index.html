@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mutt Mama Dog Training - Yvette Warner</title>
-    <meta name="description" content="Professional dog training in Southern California. 21-Day Transformation Program, In-Home Training, and Dogs Available for Adoption.">
+    <meta name="description" content="Dog training based in Lake Forest, Orange County. 21-Day Transformation board &amp; train, in-home private training within approximately 20 miles, and dogs available for adoption.">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,6 +38,64 @@
                 }
             }
         }
+    </script>
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Mutt Mama Dog Training",
+        "legalName": "Mutt Mama Dog Training LLC",
+        "description": "Dog training with Yvette Warner, a retired Orange County Deputy Sheriff. 21-Day Transformation board & train and in-home private training, specializing in reactive and rescue dogs.",
+        "url": "https://muttmama.net",
+        "telephone": "+1-949-636-3469",
+        "email": "muttmamadogtrainer@gmail.com",
+        "image": "https://muttmama.net/imagery/logo.webp",
+        "priceRange": "$$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lake Forest",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Yvette Warner",
+            "jobTitle": "Dog Trainer",
+            "description": "Retired Orange County Deputy Sheriff with 23 years of service."
+        },
+        "areaServed": [
+            { "@type": "City", "name": "Lake Forest", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Irvine", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Tustin", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Laguna Hills", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Laguna Woods", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Aliso Viejo", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Mission Viejo", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Rancho Santa Margarita", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Laguna Niguel", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Laguna Beach", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Ladera Ranch", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "San Juan Capistrano", "addressRegion": "CA", "addressCountry": "US" },
+            { "@type": "City", "name": "Dana Point", "addressRegion": "CA", "addressCountry": "US" }
+        ],
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "name": "In-Home Private Training",
+                "description": "One-on-one training in your home, within approximately 20 miles of Lake Forest, CA.",
+                "price": "175.00",
+                "priceCurrency": "USD"
+            },
+            {
+                "@type": "Offer",
+                "name": "21-Day Transformation Program",
+                "description": "Full-immersion board & train. Your dog lives in the trainer's Lake Forest home for 21 days; clients travel from across Orange County and beyond.",
+                "price": "5000.00",
+                "priceCurrency": "USD"
+            }
+        ]
+    }
     </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -108,7 +166,7 @@
                         Professional Dog Training in Southern California
                     </h1>
                     <p class="text-xl text-gray-600 mb-6">
-                        Former Deputy Sheriff with 20+ years experience. Specializing in reactive dogs and rescue transformations.
+                        Retired Orange County Deputy Sheriff with 23 years of service. Specializing in reactive dogs and rescue transformations.
                     </p>
 
                     <!-- Pricing at a glance -->
@@ -132,10 +190,11 @@
                                 <strong>📞 Phone:</strong> (949) 636-3469
                             </div>
                             <div>
-                                <strong>📍 Areas:</strong> Orange County
+                                <strong>📍 Based in:</strong> Lake Forest, CA
+                                <div class="text-gray-600">In-home training within ~20 mi &bull; <a href="#in-home-area" class="text-sage hover:underline">see service area</a></div>
                             </div>
                             <div>
-                                <strong>🎓 Trained by:</strong> The Dog Daddy
+                                <strong>🎓 Background:</strong> Retired OC Deputy Sheriff, 23 years
                             </div>
                             <div>
                                 <strong>⭐ Rating:</strong>
@@ -235,6 +294,15 @@
                         </p>
                     </div>
 
+                    <div id="in-home-area" class="bg-white border border-sage/30 rounded-lg p-4 mb-6 text-sm text-gray-700 scroll-mt-24">
+                        <div class="font-semibold text-navy mb-1">In-Home Training Service Area</div>
+                        Mutt Mama is based in Lake Forest and offers in-home dog training within approximately 20 miles of
+                        Lake Forest. This includes Irvine, Tustin, Laguna Hills, Laguna Woods, Aliso Viejo, Mission Viejo,
+                        Rancho Santa Margarita, Laguna Niguel, Laguna Beach, Ladera Ranch, San Juan Capistrano, Dana Point,
+                        and nearby communities. If you're near the edge of the service area, contact me with your address
+                        and I'll confirm availability.
+                    </div>
+
                     <p class="text-sm font-semibold text-sage mb-6 mt-auto">💰 10% off for veterans, first responders, rescue dogs &amp; seniors</p>
                     <a href="#contact" class="bg-sage text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors text-center font-semibold">
                         Book an In-Home Session
@@ -275,6 +343,13 @@
                         A <strong>$500 non-refundable hold fee</strong> reserves your dog's spot and is applied toward the
                         total. The remaining balance is due in full no later than your dog's scheduled start date.
                         Accepted payment methods: cash, check or Zelle.
+                    </div>
+
+                    <div class="bg-white border border-coral/30 rounded-lg p-4 mb-6 text-sm text-gray-700">
+                        <div class="font-semibold text-navy mb-1">Where clients come from</div>
+                        Your dog lives in my Lake Forest home for the full 21 days, so the in-home training radius does not
+                        apply here. Clients travel to me from across Orange County and beyond &mdash; if you are willing to
+                        make the drop-off and pick-up, distance is not a barrier.
                     </div>
 
                     <p class="text-sm font-semibold text-coral mb-6 mt-auto">💰 25% off for veterans, first responders, rescue dogs &amp; seniors</p>
@@ -731,7 +806,7 @@
                 <!-- Yappy Hour -->
                 <div class="bg-white rounded-xl p-8 shadow-sm border-t-4 border-navy">
                     <div class="text-4xl mb-3">🌇</div>
-                    <h3 class="text-2xl font-bold text-navy mb-1">YAPPY HOUR</h3>
+                    <h3 class="text-2xl font-bold text-navy mb-1">Yappy Hour</h3>
                     <p class="text-coral font-semibold tracking-wide mb-4">Sip. Stroll. Socialize.</p>
                     <p class="text-gray-700 mb-5">
                         An evening pack walk and social where Mutt Mama clients and their dogs get together, keep
@@ -744,10 +819,10 @@
                     </div>
                 </div>
 
-                <!-- Bark & Bites -->
+                <!-- Barks & Bites -->
                 <div class="bg-white rounded-xl p-8 shadow-sm border-t-4 border-terracotta">
                     <div class="text-4xl mb-3">🥕</div>
-                    <h3 class="text-2xl font-bold text-navy mb-1">BARK &amp; BITES</h3>
+                    <h3 class="text-2xl font-bold text-navy mb-1">Barks &amp; Bites</h3>
                     <p class="text-coral font-semibold tracking-wide mb-4">Nibble. Stroll. Wag. Repeat.</p>
                     <p class="text-gray-700 mb-5">
                         A daytime pack walk and social with simple nibbles for the humans &mdash; think finger foods, fruit
@@ -765,7 +840,7 @@
             <div class="mt-10 bg-white border-2 border-coral/30 rounded-xl p-6 sm:p-8 text-center max-w-4xl mx-auto">
                 <div class="text-3xl mb-3">🐾</div>
                 <p class="text-lg text-gray-700 mb-4 max-w-2xl mx-auto">
-                    Yappy Hour and Bark &amp; Bites are a benefit for existing Mutt Mama clients and their dogs who have
+                    Yappy Hour and Barks &amp; Bites are a benefit for existing Mutt Mama clients and their dogs who have
                     completed training with me. Two meetups every month, all year long.
                 </p>
                 <p class="text-sm text-gray-500">
@@ -782,8 +857,9 @@
             <img src="imagery/cop_optimized.jpg" alt="Yvette Warner - Deputy Sheriff" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
             <h2 class="text-3xl font-bold mb-6">Meet Yvette Warner</h2>
             <p class="text-lg mb-6">
-                Former Orange County Deputy Sheriff with over 20 years of dog training experience.
-                Trained under Augusto Deoliveira ("The Dog Daddy"). Specializing in reactive and rescue dogs.
+                I'm a retired Orange County Deputy Sheriff with 23 years of service and the founder of Mutt Mama Dog
+                Training. I specialize in helping reactive and rescue dogs, and I work closely with owners so they feel
+                confident continuing their dog's training at home.
             </p>
             <p class="text-gray-300">
                 "Having worked under pressure in law enforcement, I understand what it takes to stay calm, consistent and
@@ -862,8 +938,12 @@
                     <div class="flex items-center justify-center">
                         <span class="text-2xl mr-3">📍</span>
                         <div class="text-center">
-                            <div class="font-semibold">Service Areas</div>
-                            <div>Lake Forest, CA</div>
+                            <div class="font-semibold">Service Area</div>
+                            <div>Based in Lake Forest, CA</div>
+                            <div class="text-sm text-gray-600 mt-1">
+                                In-home training within approximately 20 miles.<br>
+                                21-Day Transformation clients travel from farther.
+                            </div>
                         </div>
                     </div>
                 </div>
