@@ -93,6 +93,17 @@
                 "description": "Full-immersion board & train. Your dog lives in the trainer's Lake Forest home for 21 days; clients travel from across Orange County and beyond.",
                 "price": "5000.00",
                 "priceCurrency": "USD"
+            },
+            {
+                "@type": "Offer",
+                "name": "21-Day Transformation Program: Aggression Cases",
+                "description": "Board & train for dogs showing aggression toward people or other animals. Priced by behavioral history, severity and safety requirements; not eligible for discounts.",
+                "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "minPrice": "5500.00",
+                    "maxPrice": "6000.00",
+                    "priceCurrency": "USD"
+                }
             }
         ]
     }
@@ -320,7 +331,10 @@
                         <span class="text-4xl font-bold text-navy">$5,000</span>
                         <span class="text-gray-600 font-medium">for the full 21-day program</span>
                     </div>
-                    <p class="text-sm text-coral font-semibold mb-5">One dog at a time &mdash; your dog is my only training client</p>
+                    <p class="text-sm text-coral font-semibold mb-3">One dog at a time &mdash; your dog is my only training client</p>
+                    <a href="#aggression-cases" class="block text-sm text-navy bg-white border border-navy/20 rounded-lg px-4 py-2 mb-5 hover:border-navy/50 transition-colors">
+                        <strong>Aggression cases: $5,500&ndash;$6,000.</strong> No discounts apply. <span class="text-coral font-semibold">Details &darr;</span>
+                    </a>
 
                     <p class="text-gray-700 mb-5">
                         Mutt Mama's premium, immersive training experience for dogs who need a deeper level of training,
@@ -352,10 +366,60 @@
                         make the drop-off and pick-up, distance is not a barrier.
                     </div>
 
-                    <p class="text-sm font-semibold text-coral mb-6 mt-auto">💰 10% off for veterans, first responders, rescue dogs &amp; seniors</p>
+                    <p class="text-sm font-semibold text-coral mb-6 mt-auto">💰 10% off for veterans, first responders, rescue dogs &amp; seniors <span class="font-normal text-gray-600">(excludes aggression cases)</span></p>
                     <a href="#contact" class="bg-coral text-white px-6 py-3 rounded-full hover:bg-red-500 transition-colors text-center font-semibold">
                         Ask About Availability
                     </a>
+                </div>
+            </div>
+
+            <!-- AGGRESSION CASES -->
+            <div id="aggression-cases" class="mt-8 bg-white border-2 border-navy/25 rounded-xl overflow-hidden scroll-mt-24">
+                <div class="grid md:grid-cols-5">
+                    <div class="md:col-span-2 bg-navy/5 p-8 flex flex-col">
+                        <div class="text-xs font-bold tracking-widest text-coral uppercase mb-2">21-Day Transformation</div>
+                        <h3 class="text-2xl font-bold text-navy leading-tight mb-5">Aggression Cases &amp; Specialized Training</h3>
+                        <div class="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-1">Aggression Case Pricing</div>
+                        <div class="text-3xl sm:text-4xl font-bold text-navy mb-1 whitespace-nowrap">$5,500&ndash;$6,000</div>
+                        <div class="text-gray-600 font-medium mb-5">for the full 21-day program</div>
+                        <div class="bg-white border-2 border-coral rounded-lg p-4 text-sm text-navy">
+                            <strong>Aggression cases are not eligible for discounts, promotional offers, or special pricing.</strong>
+                        </div>
+                    </div>
+                    <div class="md:col-span-3 p-8">
+                        <p class="text-gray-700 mb-4">
+                            Dogs who show aggression toward people or other animals often need more: additional training,
+                            specialized handling, enhanced safety precautions and a more individualized plan. Because your dog
+                            would be living in my home, every dog is evaluated individually to determine whether they are an
+                            appropriate candidate for the 21-Day Transformation Program.
+                        </p>
+                        <p class="text-gray-700 mb-5">
+                            The program fee for an aggression case is set within this range based on your dog's behavioral
+                            history, the severity of the aggression, safety considerations and individual training requirements.
+                        </p>
+
+                        <div class="bg-sage/10 border-l-4 border-sage rounded-r-lg p-4 mb-5">
+                            <div class="font-semibold text-navy mb-1">Reactive doesn't automatically mean aggressive</div>
+                            <p class="text-sm text-gray-700">
+                                Not every dog showing reactivity, fearfulness, barking or leash-related challenges is classified
+                                as an aggression case. Each dog is assessed individually.
+                            </p>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex gap-2">
+                                <span class="text-navy font-bold">›</span>
+                                <span>For the safety of everyone involved, Mutt Mama reserves the right to decline enrollment for
+                                any dog whose behavior presents risks that cannot be safely managed in a home-based training
+                                environment.</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-navy font-bold">›</span>
+                                <span>Training can improve behavior and how it is managed, but the complete elimination of
+                                aggressive behavior cannot be guaranteed.</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -532,6 +596,7 @@
                         <div class="text-3xl font-bold text-coral">10% off</div>
                         <div class="text-sm text-gray-700 mt-1">The 21-Day Transformation Program</div>
                         <div class="text-xs text-gray-500 mt-2">$5,000 &rarr; <span class="font-semibold text-navy">$4,500</span> for eligible clients</div>
+                        <div class="text-xs text-gray-500 mt-1">Not available for <a href="#aggression-cases" class="underline hover:text-coral">aggression cases</a></div>
                     </div>
                     <div class="bg-white border border-sage/30 rounded-lg p-5">
                         <div class="text-3xl font-bold text-sage">10% off</div>
@@ -545,7 +610,7 @@
                     <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('rescue')">Rescue Dogs</span>
                     <span class="px-4 py-2 bg-white border border-coral/30 rounded-full cursor-pointer hover:bg-coral hover:text-white transition-colors" onclick="showDiscountDetails('seniors')">Seniors</span>
                 </div>
-                <p class="text-xs text-gray-500 mt-3">Click any category for details and terms. Discounts cannot be combined with other offers.</p>
+                <p class="text-xs text-gray-500 mt-3">Click any category for details and terms. Discounts cannot be combined with other offers and do not apply to aggression cases.</p>
             </div>
 
             <!-- Discount Details Overlays -->
@@ -1047,6 +1112,7 @@
                             <li>10% off the 21-Day Transformation Program and In-Home Private Training</li>
                             <li>Valid ID or documentation required</li>
                             <li>Cannot be combined with other offers</li>
+                            <li>Not available for aggression cases</li>
                             <li>Applies to new clients only</li>
                         </ul>
                     `
@@ -1066,6 +1132,7 @@
                             <li>10% off the 21-Day Transformation Program and In-Home Private Training</li>
                             <li>Employment verification required</li>
                             <li>Cannot be combined with other offers</li>
+                            <li>Not available for aggression cases</li>
                             <li>Applies to new clients only</li>
                         </ul>
                     `
@@ -1084,6 +1151,7 @@
                             <li>10% off the 21-Day Transformation Program and In-Home Private Training</li>
                             <li>Adoption papers or rescue documentation required</li>
                             <li>Cannot be combined with other offers</li>
+                            <li>Not available for aggression cases</li>
                             <li>Valid for 6 months after adoption</li>
                         </ul>
                     `
@@ -1101,6 +1169,7 @@
                             <li>10% off the 21-Day Transformation Program and In-Home Private Training</li>
                             <li>Valid ID showing date of birth required</li>
                             <li>Cannot be combined with other offers</li>
+                            <li>Not available for aggression cases</li>
                             <li>Applies to new clients only</li>
                         </ul>
                     `
