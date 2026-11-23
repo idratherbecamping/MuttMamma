@@ -1,0 +1,48 @@
+# Publishes edits made by the Avalon site bot (a scheduled Claude routine that
+# handles client change requests by email). The bot pushes a claude/* branch
+# whose latest commit message contains [auto-deploy]; this job checks the page,
+# merges the branch into main, and Vercel deploys main to production.
+# Managed from idratherbecamping/website-management.
+name: Auto-deploy site bot edits
+
+on:
+  push:
+    branches: ['claude/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: contains(github.event.head_commit.message, '[auto-deploy]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Merge the branch into the latest main
+        run: |
+          # Commit as the repo owner so Vercel deploys the merge like any other push to main.
+          git config user.name "idratherbecamping"
+          git config user.email "26419188+idratherbecamping@users.noreply.github.com"
+          git checkout -B deploy origin/main
+          git merge --no-ff "$GITHUB_SHA" -m "Deploy ${GITHUB_REF_NAME} (site bot)"
+
+      - name: Sanity-check the page
+        run: |
+          test -s index.html
+          grep -qi '</html>' index.html
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          HTMLParser().feed(open("index.html", encoding="utf-8").read())
+          PY
+
+      - name: Publish
+        run: |
+          git push origin HEAD:main
+          git push origin --delete "$GITHUB_REF_NAME" || true
